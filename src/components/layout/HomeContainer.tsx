@@ -7,7 +7,7 @@ export const HomeContainer = () => {
 
   return (
     <DHLayout
-      leftNav={<H4>DAOhaus App Starter</H4>}
+      leftNav={<H4>aqua DAO</H4>}
       pathname={location.pathname}
       navLinks={[{ label: "Home", href: `/` }]}
       footer={<Footer />}

@@ -49,12 +49,12 @@ export const Member = () => {
     });
   };
 
-  if (!daoChain || !daoId) return <ParLg>DAO Not Found</ParLg>;
+  if (!daoChain || !daoId) return <ParLg>No encontre ese DAO!</ParLg>;
 
   return (
     <SingleColumnLayout title="Member Profile">
       {!member && isFetching && <Loading size={12} />}
-      {!member && isFetched && <ParLg>Member Not Found</ParLg>}
+      {!member && isFetched && <ParLg>No encontre a esa persona</ParLg>}
       {member && (
         <>
           <ButtonsContainer>
@@ -66,14 +66,14 @@ export const Member = () => {
               variant="outline"
               fullWidth={isMobile}
             >
-              MEMBERS
+              PERSONAS
             </ButtonRouterLink>
             <Button
               IconLeft={BsShareFill}
               onClick={handleOnClick}
               fullWidth={isMobile}
             >
-              SHARE PROFILE
+              COMPARTE PERFIL
             </Button>
           </ButtonsContainer>
           <MemberProfileCard

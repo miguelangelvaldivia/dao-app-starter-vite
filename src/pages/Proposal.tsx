@@ -53,7 +53,7 @@ export const Proposal = () => {
   if (!daoChain || !daoId)
     return (
       <LoadingContainer>
-        <ParLg>DAO Not Found</ParLg>
+        <ParLg>No encontre ese DAO</ParLg>
       </LoadingContainer>
     );
 

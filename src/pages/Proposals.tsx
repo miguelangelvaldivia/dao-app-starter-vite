@@ -27,7 +27,7 @@ export const Proposals = () => {
         rightActionEl={
           <Dialog>
             <DialogTrigger asChild>
-              <Button IconLeft={BsPlusLg}>New Proposal</Button>
+              <Button IconLeft={BsPlusLg}>Nueva Propuesta</Button>
             </DialogTrigger>
             <DialogContent title="Choose Proposal Type">
               <NewProposalList
