@@ -50,16 +50,18 @@ const Dao = ({
 
   const navLinks = useMemo(() => {
     let baseLinks = [
-      { label: "Home", href: `https://aqua-life.surge.sh/` },
+      { label: "Home", href: `/` },
       { label: "DAO", href: `/${routePath}` },
-      { label: "Propuestas", href: `/${routePath}/proposals` },
-      { label: "Personas", href: `/${routePath}/members` },    
+      { label: "Safes", href: `/${routePath}/safes` },
+      { label: "Proposals", href: `/${routePath}/proposals` },
+      { label: "Members", href: `/${routePath}/members` },
+      { label: "Settings", href: `/${routePath}/settings` },
     ];
 
     return address
       ? [
           ...baseLinks,
-          { label: "Perfil", href: `/${routePath}/member/${address}` },
+          { label: "Profile", href: `/${routePath}/member/${address}` },
         ]
       : baseLinks;
   }, [daoChain, daoId, address]);

@@ -9,8 +9,8 @@ export const APP_FORM: Record<string, CustomFormLego> = {
   TEST_FORM: {
     id: "TEST_FORM",
     title: "Super Signal Form",
-    subtitle: "Super Signal Proposal",
-    description: "Ratify on-chain using a DAO proposal.",
+    subtitle: "Super Signal Propuesta",
+    description: "Ratifica on-chain usando una propuesta del DAO.",
     requiredFields: { title: true, description: true, testField: true },
     log: true,
     tx: APP_TX.TEST_TX,

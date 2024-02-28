@@ -12,7 +12,7 @@ export const Members = () => {
   const isMd = useBreakpoint(widthQuery.md);
 
   return (
-    <SingleColumnLayout title="Members">
+    <SingleColumnLayout title="Lista de Votantes">
       {!daoChain || !daoId ? (
         <Loading size={isMd ? 8 : 16} padding="6rem" />
       ) : (

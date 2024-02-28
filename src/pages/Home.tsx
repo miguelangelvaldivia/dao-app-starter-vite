@@ -34,7 +34,7 @@ export const Home = () => {
               TARGET_DAO[import.meta.env.VITE_TARGET_KEY].CHAIN_ID
             }/${TARGET_DAO[import.meta.env.VITE_TARGET_KEY].ADDRESS}`}
           >
-            Visita aquaDAO aqui
+            Empieza tu visita al aquaDAO aqui
           </StyledRouterLink>
         )}
         <Link href="https://github.com/HausDAO/monorepo">Github</Link>

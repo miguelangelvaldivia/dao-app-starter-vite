@@ -92,11 +92,11 @@ export const NewProposalList = ({
       <Tabs
         tabList={[
           {
-            label: "Basics",
+            label: "Básico",
             Component: () => <ProposalList proposals={basicProposals} />,
           },
           {
-            label: "Advanced",
+            label: "Avanzado",
             Component: () => <ProposalList proposals={advancedProposals} />,
           },
         ]}

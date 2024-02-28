@@ -45,14 +45,14 @@ export const Member = () => {
   const handleOnClick = () => {
     navigator.clipboard.writeText(`${window.location.href}`);
     successToast({
-      title: "URL copied to clipboard",
+      title: "URL copiado al clipboard",
     });
   };
 
   if (!daoChain || !daoId) return <ParLg>No encontre ese DAO!</ParLg>;
 
   return (
-    <SingleColumnLayout title="Member Profile">
+    <SingleColumnLayout title="Perfil del votante">
       {!member && isFetching && <Loading size={12} />}
       {!member && isFetched && <ParLg>No encontre a esa persona</ParLg>}
       {member && (
@@ -66,7 +66,7 @@ export const Member = () => {
               variant="outline"
               fullWidth={isMobile}
             >
-              PERSONAS
+              VOTANTES
             </ButtonRouterLink>
             <Button
               IconLeft={BsShareFill}
